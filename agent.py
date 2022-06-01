@@ -30,8 +30,8 @@ class Agent:
             dir_r,
             dir_s,
 
-            game.closest_invader_x < game.player_X,
-            game.closest_invader_x > game.player_X
+            game.closest_alien_x < game.player_X,
+            game.closest_alien_x > game.player_X
         ]
 
         return np.array(state, dtype=int)
